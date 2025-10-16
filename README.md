@@ -1,4 +1,5 @@
-#Casino Royal Pluss
+# Casino Royal Pluss
+
 <p align="center">
   <img src="Logo.webp" alt="Royal Pluss Logo" width="300">
 </p>
@@ -142,10 +143,268 @@ Criterios de aceptación:
   -Se añaden automáticamente 50 € al saldo del usuario.
 
 ## 3. Diseño
-Añadir aquí lo relacionado con el diseño y técnicas descriptivas que fuimos creando
+  El diseño de la interfaz se basará en una estética elegante con tonos dorados y negros, transmitiendo una sensación de lujo y exclusividad.
+  La página principal mostrará el logotipo de Royal Pluss, un menú superior con acceso a los distintos juegos (póker, ruleta, tragamonedas, blackjack) y un área central con banners promocionales y bonificaciones.
+  Se priorizará una experiencia limpia, fácil de navegar y adaptable a móviles (diseño responsive).
+  El sistema se desarrollará bajo una arquitectura cliente-servidor.
+  
+    Frontend: desarrollado con HTML5, CSS3 y JavaScript para la versión web, priorizando compatibilidad móvil.
+    
+    Backend: se implementará con Node.js y Express, encargándose de gestionar los datos de usuarios, autenticación y pagos.
+    
+    Base de datos: MySQL para el almacenamiento de información de jugadores, juegos y transacciones.
+    
+    Seguridad: se aplicará cifrado SSL y verificación de identidad mediante DNI digital para cumplir las normas de juego responsable.
+
 
 ## 4. Implementación
-Añade aquí aunque no tenga que ver con el proyecto, los ejercicios donde tuviste que corregir el código "feo"
+/**
+ * Clase Hola
+ *
+ *
+ * @author Raul
+ * @version 1.0
+ */
+public class Hola
+{ // Esta función hace una condición; si se cumple pasa, sino se dirige al else.
+     
+    public static void main(String[] args) 
+    {
+        System.out.println("Hola mundo");
+
+        if (true) 
+        {
+            System.out.println("Condición verdadera");
+        } 
+        else 
+        {
+            System.out.println("Condición falsa");
+        }
+    }
+}
+<br>
+/**
+ * Clase para calcular el área de un círculo.
+ * 
+ * Esta clase contiene un método estático para calcular el área de un círculo 
+ * a partir de su radio usando la constante PI.
+ *
+ * @author Raul
+ * @version 1.0
+ */
+public class Area
+{
+    /** Valor de Pi. */
+    private static final double PI = 3.1416;
+
+    /** 
+     * Calcula el área de un círculo.
+     *
+     * @param radio Radio del círculo.
+     * @return El área calculada.
+     */
+    public static double calcularArea(double radio) 
+    {
+        return PI * radio * radio;
+    }
+
+    /** 
+     * Método principal de ejecución.
+     *
+     * @param args Argumentos de línea de comandos (no se utilizan).
+     */
+    public static void main(String[] args)
+    {
+        double area = calcularArea(5);
+        System.out.println("El área es: " + area);
+    }
+}
+
+<br>
+/**
+ * Clase que realiza operaciones matemáticas simples.
+ * 
+ * Esta clase proporciona métodos estáticos para realizar operaciones básicas
+ * como suma, resta, multiplicación y división entre dos números enteros.
+ * 
+ * <p>Ejemplo de uso:</p>
+ * <pre>
+ * int resultado = OperacionesMatematicas.sumar(5, 3);
+ * System.out.println("Resultado: " + resultado);
+ * </pre>
+ *
+ * @author Raul
+ * @version 1.0
+ */
+ <br>
+public class OperacionesMatematicas 
+{
+    /**
+     * Suma dos números enteros.
+     *
+     * @param a Primer número.
+     * @param b Segundo número.
+     * @return La suma de ambos números.
+     */
+    public static int sumar(int a, int b) 
+    {
+        return a + b;
+    }
+
+    /**
+     * Resta dos números enteros.
+     *
+     * @param a Primer número.
+     * @param b Segundo número.
+     * @return La diferencia entre ambos números.
+     */
+    public static int restar(int a, int b) 
+    {
+        return a - b;
+    }
+
+    /**
+     * Multiplica dos números enteros.
+     *
+     * @param a Primer número.
+     * @param b Segundo número.
+     * @return El producto de ambos números.
+     */
+    public static int multiplicar(int a, int b)
+    {
+        return a * b;
+    }
+
+    /**
+     * Divide dos números enteros.
+     * 
+     * Si el divisor es cero, muestra un mensaje y devuelve 0.
+     *
+     * @param a Dividendo.
+     * @param b Divisor.
+     * @return El cociente de la división, o 0 si el divisor es cero.
+     */
+    public static int dividir(int a, int b)  
+    {
+        if (b == 0)
+        {
+            System.out.println("No se puede dividir por cero");
+            return 0;
+        }
+        return a / b;
+    }
+
+    /**
+     * Método principal para comprobar las operaciones.
+     *
+     * @param args Argumentos de línea de comandos (no utilizados).
+     */
+    public static void main(String[] args) 
+    {
+        System.out.println("Suma: " + sumar(5, 3));
+        System.out.println("Resta: " + restar(8, 2));
+        System.out.println("Multiplicación: " + multiplicar(4, 6));
+        System.out.println("División: " + dividir(9, 3));
+    }
+}
+
+<br>
+package com.mycompany.mavenproject2;
+
+/**
+ * Clase que realiza operaciones básicas de una calculadora.
+ * 
+ * Esta clase incluye métodos para sumar, restar, multiplicar y dividir
+ * dos números enteros. Además, contiene un método principal para ejecutar
+ * pruebas simples de las operaciones.
+ *
+ * <p>Ejemplo de uso:</p>
+ * <pre>
+ * Mavenproject2 calc = new Mavenproject2();
+ * System.out.println("Suma: " + calc.sumar(10, 5));
+ * </pre>
+
+
+ <br>
+ * @author Raul
+ * @version 1.0
+
+ */
+public class Mavenproject2
+{
+    /**
+     * Suma dos números enteros.
+     *
+     * @param x Primer número.
+     * @param y Segundo número.
+     * @return La suma de ambos números.
+     */
+    public int sumar(int x, int y) 
+    {
+        return x + y;
+    }
+        
+    /**
+     * Resta dos números enteros.
+     *
+     * @param x Primer número.
+     * @param y Segundo número.
+     * @return La diferencia entre ambos números.
+     */
+    public int restar(int x, int y) 
+    {
+        return x - y;
+    }
+
+    /**
+     * Multiplica dos números enteros.
+     *
+     * @param x Primer número.
+     * @param y Segundo número.
+     * @return El producto de ambos números.
+     */
+    public int multiplicar(int x, int y)
+    {
+        return x * y;
+    }
+
+    /**
+     * Divide dos números enteros.
+     * 
+     * Si el divisor es cero, muestra un mensaje de error y devuelve 0.
+     *
+     * @param x Dividendo.
+     * @param y Divisor.
+     * @return El resultado de la división, o 0 si el divisor es cero.
+     */
+    public int dividir(int x, int y)
+    {
+        if (y == 0)
+        {
+            System.out.println("Error: división por cero");
+            return 0;
+        }
+        return x / y;
+    }
+
+    /**
+     * Método principal para ejecutar la calculadora.
+     *
+     * @param args Argumentos de línea de comandos (no utilizados).
+     */
+    public static void main(String[] args)
+    {
+        Mavenproject2 c = new Mavenproject2();
+
+        System.out.println("Suma: " + c.sumar(10, 5));
+        System.out.println("Resta: " + c.restar(10, 5));
+        System.out.println("Multiplicación: " + c.multiplicar(10, 5));
+        System.out.println("División: " + c.dividir(10, 5));
+    }
+}
+
+<br>
+
 
 ## 5. Plan de pruebas del sistema
 Añade aquí lo que hicimos para diseñar las pruebas
