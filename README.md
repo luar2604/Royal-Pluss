@@ -1,4 +1,4 @@
-# Casino Royal Pluss
+#Casino Royal Pluss
 <p align="center">
   <img src="Logo.webp" alt="Royal Pluss Logo" width="300">
 </p>
