@@ -406,161 +406,161 @@ public class Mavenproject2
 <br>
 
 
-## 5. Plan de pruebas del sistema
+## 5. Plan de pruebas del sistema<br>
 
-UNIDAD 01. ACTIVIDADES 06
-Antes de comenzar, analiza los tipos de tests que existen en este enlace.
-Ejercicio 01: Diseñando las pruebas de tus casos de uso
-En este ejercicio deberás detallar DOS casos de uso de tu software (ya deberías tenerlos
-creados) y tendrás que diseñar DOS pruebas por cada uno de tus casos de uso que aseguren
-que se cumplen esos requisitos funcionales.
-Para ello, deberás especificar el tipo de prueba (unitaria, negativa, aceptación, etc.), datos de
-entrada, acción a realizar y resultado esperado.
-Ejemplo ilustrativo:
-Caso de uso: Registrar usuario
-Requisito funcional: El sistema debe permitir a un usuario registrarse y validar que no exista otra
-cuenta con el mismo correo.
-Pruebas propuestas:
-Tipo de prueba Entrada / acción Resultado
-Funcional Usuario introduce un correo
-nuevo y datos válidos
-El sistema registra al usuario
-y envía correo de verificación
-Funcional / Negativa Usuario introduce un correo
-ya registrado
-El sistema muestra un
-mensaje de error indicando
-que el correo ya existe
-Ejercicio 02: Diseñando las pruebas de distintos casos de uso ficticios
-Caso de uso 1: Registrar usuario
-Requisito funcional: El sistema debe permitir a un nuevo usuario crear una cuenta,
-validando que el correo no exista y enviando un correo de verificación para activar el perfil.
-Tipo Acción / entrada Resultado esperado
-Tipo de prueba Entrada / acción Resultado
-Funcional Usuario crea cuenta con
-correo válido
-Cuenta creada y correo de
-verificación enviado
-Funcional / Negativa Correo ya existente Mensaje de error “correo ya
-registrado”
-Caso de uso 2: Iniciar sesión con autenticación segura
-Requisito funcional: El sistema debe autenticar a los usuarios mediante correo y contraseña
-cifrada, y ofrecer la opción de inicio de sesión con Google o Microsoft.
-Tipo de prueba Entrada / acción Resultado
-Funcional Usuario inicia sesion con
-google
-Acceso correcto y datos
-Funcional / Negativa Contraseña incorrecta Error”credenciales invalidas”
-Caso de uso 3: Cerrar sesión en todos los dispositivos
-Requisito funcional: El sistema debe permitir al usuario cerrar su sesión activa en todos los
-dispositivos desde el panel de seguridad.
-Tipo de prueba Entrada / acción Resultado
-Funcional Usuario hace clic en “Cerrar
-sesión en todos los
-dispositivos”
-Todas las sesiones se cierran
-Funcional / Negativa Verificación del usuario en
-otro dispositivo
-Usuario ya no tiene acceso
-sin volver a iniciar sesión
-Caso de uso 4: Recuperar contraseña mediante enlace temporal
-Requisito funcional: El sistema debe permitir restablecer la contraseña enviando un enlace
-temporal al correo del usuario, con caducidad de 15 minutos.
-Tipo de prueba Entrada / acción Resultado
-Funcional Usuario solicita recuperación
-de contraseña
-Enlace temporal enviado
-(expira en 15 minutos)
-Funcional / Negativa Usuario usa enlace expirado Mensaje: “El enlace ha
-caducado, solicita uno nuevo”
-Caso de uso 5: Actualizar perfil profesional
-Requisito funcional: El sistema debe permitir editar los datos personales y profesionales
-(nombre, foto, puesto, redes sociales), guardando cambios en tiempo real.
-Tipo de prueba Entrada / acción Resultado
-Funcional Usuario cambia nombre y
-foto
-Cambios guardados en
-tiempo real
-Funcional / Negativa Sube una imagen no
-permitida (por ejemplo, .exe)
-Mensaje: “Formato no
-permitido”
-Caso de uso 6: Subir archivos y documentos al proyecto
-Requisito funcional: El sistema debe permitir al usuario subir archivos (PDF, imágenes o
-CSV) de hasta 10 MB, validando el formato y guardándolos en la nube con versión
-automática.
-Tipo de prueba Entrada / acción Resultado
+UNIDAD 01. ACTIVIDADES 06<br>
+Antes de comenzar, analiza los tipos de tests que existen en este enlace.<br>
+Ejercicio 01: Diseñando las pruebas de tus casos de uso<br>
+En este ejercicio deberás detallar DOS casos de uso de tu software (ya deberías tenerlos<br>
+creados) y tendrás que diseñar DOS pruebas por cada uno de tus casos de uso que aseguren<br>
+que se cumplen esos requisitos funcionales.<br>
+Para ello, deberás especificar el tipo de prueba (unitaria, negativa, aceptación, etc.), datos de<br>
+entrada, acción a realizar y resultado esperado.<br>
+Ejemplo ilustrativo:<br>
+Caso de uso: Registrar usuario<br>
+Requisito funcional: El sistema debe permitir a un usuario registrarse y validar que no exista otra<br>
+cuenta con el mismo correo.<br>
+Pruebas propuestas:<br>
+Tipo de prueba Entrada / acción Resultado<br>
+Funcional Usuario introduce un correo<br>
+nuevo y datos válidos<br>
+El sistema registra al usuario<br>
+y envía correo de verificación<br>
+Funcional / Negativa Usuario introduce un correo<br>
+ya registrado<br>
+El sistema muestra un<br>
+mensaje de error indicando<br>
+que el correo ya existe<br>
+Ejercicio 02: Diseñando las pruebas de distintos casos de uso ficticios<br>
+Caso de uso 1: Registrar usuario<br>
+Requisito funcional: El sistema debe permitir a un nuevo usuario crear una cuenta,<br>
+validando que el correo no exista y enviando un correo de verificación para activar el perfil.<br>
+Tipo Acción / entrada Resultado esperado<br>
+Tipo de prueba Entrada / acción Resultado<br>
+Funcional Usuario crea cuenta con<br>
+correo válido<br>
+Cuenta creada y correo de<br>
+verificación enviado<br>
+Funcional / Negativa Correo ya existente Mensaje de error “correo ya<br>
+registrado”<br>
+Caso de uso 2: Iniciar sesión con autenticación segura<br>
+Requisito funcional: El sistema debe autenticar a los usuarios mediante correo y contraseña<br>
+cifrada, y ofrecer la opción de inicio de sesión con Google o Microsoft.<br>
+Tipo de prueba Entrada / acción Resultado<br>
+Funcional Usuario inicia sesion con<br>
+google<br>
+Acceso correcto y datos<br>
+Funcional / Negativa Contraseña incorrecta Error”credenciales invalidas”<br>
+Caso de uso 3: Cerrar sesión en todos los dispositivos<br>
+Requisito funcional: El sistema debe permitir al usuario cerrar su sesión activa en todos los<br>
+dispositivos desde el panel de seguridad.<br>
+Tipo de prueba Entrada / acción Resultado<br>
+Funcional Usuario hace clic en “Cerrar<br>
+sesión en todos los<br>
+dispositivos”<br>
+Todas las sesiones se cierran<br>
+Funcional / Negativa Verificación del usuario en<br>
+otro dispositivo<br>
+Usuario ya no tiene acceso<br>
+sin volver a iniciar sesión<br>
+Caso de uso 4: Recuperar contraseña mediante enlace temporal<br>
+Requisito funcional: El sistema debe permitir restablecer la contraseña enviando un enlace<br>
+temporal al correo del usuario, con caducidad de 15 minutos.<br>
+Tipo de prueba Entrada / acción Resultado<br>
+Funcional Usuario solicita recuperación<br>
+de contraseña<br>
+Enlace temporal enviado<br>
+(expira en 15 minutos)<br>
+Funcional / Negativa Usuario usa enlace expirado Mensaje: “El enlace ha<br>
+caducado, solicita uno nuevo”<br>
+Caso de uso 5: Actualizar perfil profesional<br>
+Requisito funcional: El sistema debe permitir editar los datos personales y profesionales<br>
+(nombre, foto, puesto, redes sociales), guardando cambios en tiempo real.<br>
+Tipo de prueba Entrada / acción Resultado<br>
+Funcional Usuario cambia nombre y<br>
+foto<br>
+Cambios guardados en<br>
+tiempo real<br>
+Funcional / Negativa Sube una imagen no<br>
+permitida (por ejemplo, .exe)<br>
+Mensaje: “Formato no<br>
+permitido”<br>
+Caso de uso 6: Subir archivos y documentos al proyecto<br>
+Requisito funcional: El sistema debe permitir al usuario subir archivos (PDF, imágenes o<br>
+CSV) de hasta 10 MB, validando el formato y guardándolos en la nube con versión<br>
+automática.<br>
+Tipo de prueba Entrada / acción Resultado<br>
 Funcional Usuario sube archivo PDF de
-5 MB
-Archivo subido con éxito
+5 MB<br>
+Archivo subido con éxito<br>
 Funcional / Negativa Archivo de 20 MB Error: “El archivo supera el
-límite de 10 MB”
-Caso de uso 7: Buscar oportunidades o proyectos activos
-Requisito funcional: El sistema debe permitir realizar búsquedas filtradas por palabra clave,
-cliente o estado del proyecto, mostrando resultados relevantes en menos de 2 segundos.
-Tipo de prueba Entrada / acción Resultado
-Funcional Usuario busca “marketing” Resultados mostrados en < 2
-segundos
-Funcional / Negativa Búsqueda con caracteres no
-válidos
-Mensaje: “Entrada inválida”
-Caso de uso 8: Generar informe de rendimiento mensual
-Requisito funcional: El sistema debe permitir generar informes en PDF o Excel con métricas
-actualizadas (usuarios activos, ventas, incidencias), y ofrecer la descarga inmediata.
-Tipo de prueba Entrada / acción Resultado
-Funcional Usuario elige formato PDF y
-hace clic en “Generar”
-Informe generado y descarga
+límite de 10 MB”<br>
+Caso de uso 7: Buscar oportunidades o proyectos activos<br>
+Requisito funcional: El sistema debe permitir realizar búsquedas filtradas por palabra clave,<br>
+cliente o estado del proyecto, mostrando resultados relevantes en menos de 2 segundos.<br>
+Tipo de prueba Entrada / acción Resultado<br>
+Funcional Usuario busca “marketing” Resultados mostrados en < 2<br>
+segundos<br>
+Funcional / Negativa Búsqueda con caracteres no<br>
+válidos<br>
+Mensaje: “Entrada inválida”<br>
+Caso de uso 8: Generar informe de rendimiento mensual<br>
+Requisito funcional: El sistema debe permitir generar informes en PDF o Excel con métricas<br>
+actualizadas (usuarios activos, ventas, incidencias), y ofrecer la descarga inmediata.<br>
+Tipo de prueba Entrada / acción Resultado<br>
+Funcional Usuario elige formato PDF y<br>
+hace clic en “Generar”<br>
+Informe generado y descarga<br>
 disponible
-Funcional / Negativa Error en datos o métricas
+Funcional / Negativa Error en datos o métricas<br>
 faltantes
-Mensaje: “No se puede
-generar el informe por datos
+Mensaje: “No se puede<br>
+generar el informe por datos<br>
 incompletos”
-Caso de uso 9: Enviar notificaciones automáticas de eventos
-Requisito funcional: El sistema debe enviar notificaciones por correo o dentro de la
-aplicación cuando ocurran eventos relevantes (nuevo comentario, tarea asignada,
-renovación próxima).
-Tipo de prueba Entrada / acción Resultado
-Funcional Nuevo comentario en
-proyecto
-Se envía notificación al
-usuario asignado
-Funcional / Negativa Usuario con notificaciones
-desactivadas
-No se envía aviso
-Caso de uso 10: Gestionar roles y permisos de usuario (rol administrador)
-Requisito funcional: El sistema debe permitir al administrador asignar, modificar o revocar
-roles y permisos, registrando todas las acciones en el log de auditoría.
-Tipo de prueba Entrada / acción Resultado
-Funcional Admin cambia de rol de
-usuario a “editor”
-Cambio guardado y
-registrado en el log
-Funcional / Negativa Usuario sin permisos intenta
-cambiar roles
-Error: “Acceso denegado”
-Caso de uso 11: Validar métricas financieras (caso tipo SaaS empresarial)
-Requisito funcional: El sistema debe comparar los ingresos mensuales actuales con los
-históricos (MRR, ARR) y marcar automáticamente anomalías o diferencias significativas.
-Tipo de prueba Entrada / acción Resultado
-Funcional Sistema compara MRR actual
-vs histórico
-Detecta diferencias y las
-marca como anomalías
-Funcional / Negativa Datos financieros incompletos Mensaje: “Datos insuficientes
-para análisis”
-Caso de uso 12: Eliminar cuenta y todos los datos personales
-Requisito funcional: El sistema debe permitir al usuario eliminar su cuenta de forma
-permanente, asegurando la eliminación completa de los datos conforme al RGPD.
-Tipo de prueba Entrada / acción Resultado
-Funcional Usuario confirma eliminación Cuenta y datos borrados
-según RGPD
-Funcional / Negativa Usuario intenta volver a
-acceder
+Caso de uso 9: Enviar notificaciones automáticas de eventos<br>
+Requisito funcional: El sistema debe enviar notificaciones por correo o dentro de la<br>
+aplicación cuando ocurran eventos relevantes (nuevo comentario, tarea asignada,<br>
+renovación próxima).<br>
+Tipo de prueba Entrada / acción Resultado<br>
+Funcional Nuevo comentario en<br>
+proyecto<br>
+Se envía notificación al<br>
+usuario asignado<br>
+Funcional / Negativa Usuario con notificaciones<br>
+desactivadas<br>
+No se envía aviso<br>
+Caso de uso 10: Gestionar roles y permisos de usuario (rol administrador)<br>
+Requisito funcional: El sistema debe permitir al administrador asignar, modificar o revocar<br>
+roles y permisos, registrando todas las acciones en el log de auditoría.<br>
+Tipo de prueba Entrada / acción Resultado<br>
+Funcional Admin cambia de rol de<br>
+usuario a “editor”<br>
+Cambio guardado y<br>
+registrado en el log<br>
+Funcional / Negativa Usuario sin permisos intenta<br>
+cambiar roles<br>
+Error: “Acceso denegado”<br>
+Caso de uso 11: Validar métricas financieras (caso tipo SaaS empresarial)<br>
+Requisito funcional: El sistema debe comparar los ingresos mensuales actuales con los<br>
+históricos (MRR, ARR) y marcar automáticamente anomalías o diferencias significativas.<br>
+Tipo de prueba Entrada / acción Resultado<br>
+Funcional Sistema compara MRR actual<br>
+vs histórico<br>
+Detecta diferencias y las<br>
+marca como anomalías<br>
+Funcional / Negativa Datos financieros incompletos Mensaje: “Datos insuficientes<br>
+para análisis”<br>
+Caso de uso 12: Eliminar cuenta y todos los datos personales<br>
+Requisito funcional: El sistema debe permitir al usuario eliminar su cuenta de forma<br>
+permanente, asegurando la eliminación completa de los datos conforme al RGPD.<br>
+Tipo de prueba Entrada / acción Resultado<br>
+Funcional Usuario confirma eliminación Cuenta y datos borrados<br>
+según RGPD<br>
+Funcional / Negativa Usuario intenta volver a<br>
+acceder<br>
 Acceso denegado, cuenta no
 existe
-
+<br>
 
 ### 5.1. Pruebas de aceptación
 Nada por aquí 
