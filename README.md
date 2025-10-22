@@ -405,7 +405,6 @@ public class Mavenproject2
 
 <br>
 
-
 ## 5. Plan de pruebas del sistema<br>
 
 Caso de uso 1: Registrar usuario
@@ -416,17 +415,138 @@ Requisito funcional: El sistema debe permitir a un nuevo usuario crear una cuent
 |----------------|------------------|--------------------|
 | Funcional | Usuario crea cuenta con correo válido | Cuenta creada y correo de verificación enviado |
 | Funcional / Negativa | Correo ya existente | Mensaje de error “correo ya registrado” |
+<BR>
 
 
 
+Ejercicio 02: Diseñando las pruebas de distintos casos de uso ficticios<br>
+🧾 Caso de uso 1: Registrar usuario
+
+Requisito funcional:
+El sistema debe permitir a un nuevo usuario crear una cuenta, validando que el correo no exista y enviando un correo de verificación para activar el perfil.
+
+| Tipo de prueba | Entrada / acción | Resultado esperado |
+|----------------|------------------|--------------------|
+| Funcional | Usuario inicia sesión con Google | Acceso correcto y datos cargados |
+| Funcional / Negativa | Contraseña incorrecta | Error “credenciales inválidas” |
+<BR>
 
 
 
+Caso de uso 3: Cerrar sesión en todos los dispositivos
+
+Requisito funcional:
+El sistema debe permitir al usuario cerrar su sesión activa en todos los dispositivos desde el panel de seguridad.
+
+| Tipo de prueba | Entrada / acción | Resultado esperado |
+|----------------|------------------|--------------------|
+| Funcional | Usuario hace clic en “Cerrar sesión en todos los dispositivos” | Todas las sesiones se cierran |
+| FunciOnal / Negativa | Verificación del usuario en otro dispositivo | Usuario ya no tiene acceso sin volver a iniciar sesión |
+<BR>
 
 
 
+Caso de uso 4: Recuperar contraseña mediante enlace temporal<BR>
 
-<br>
+Requisito funcional:
+El sistema debe permitir restablecer la contraseña enviando un enlace temporal al correo del usuario, con caducidad de 15 minutos.
+| Tipo de prueba | Entrada / acción | Resultado esperado |
+|----------------|------------------|--------------------|
+| Funcional | Usuario solicita recuperación de contraseña | Enlace temporal enviado (expira en 15 minutos) |
+| Funcional / Negativa | Usuario usa enlace expirado | Mensaje: “El enlace ha caducado, solicita uno nuevo” |
+<BR>
+
+
+
+Caso de uso 5: Actualizar perfil profesional<BR>
+
+Requisito funcional:
+El sistema debe permitir editar los datos personales y profesionales (nombre, foto, puesto, redes sociales), guardando cambios en tiempo real.
+| Tipo de prueba | Entrada / acción | Resultado esperado |
+|----------------|------------------|--------------------|
+| Funcional | Usuario cambia nombre y foto | Cambios guardados en tiempo real |
+| Funcional / Negativa | Sube una imagen no permitida (.exe) | Mensaje: “Formato no permitido” |
+<BR>
+
+
+Caso de uso 6: Subir archivos y documentos al proyecto<BR>
+
+Requisito funcional:
+El sistema debe permitir al usuario subir archivos (PDF, imágenes o CSV) de hasta 10 MB, validando el formato y guardándolos en la nube con versión automática.
+
+| Tipo de prueba | Entrada / acción | Resultado esperado |
+|----------------|------------------|--------------------|
+| Funcional | Usuario sube archivo PDF de 5 MB | Archivo subido con éxito |
+| Funcional / Negativa | Archivo de 20 MB | Error: “El archivo supera el límite de 10 MB” |
+<BR>
+
+Caso de uso 7: Buscar oportunidades o proyectos activos<BR>
+
+Requisito funcional:
+El sistema debe permitir realizar búsquedas filtradas por palabra clave, cliente o estado del proyecto, mostrando resultados relevantes en menos de 2 segundos.
+
+| Tipo de prueba | Entrada / acción | Resultado esperado |
+|----------------|------------------|--------------------|
+| Funcional | Usuario busca “marketing” | Resultados mostrados en < 2 segundos |
+| Funcional / Negativa | Búsqueda con caracteres no válidos | Mensaje: “Entrada inválida” |
+<BR>
+
+Caso de uso 8: Generar informe de rendimiento mensual<BR>
+
+Requisito funcional:
+El sistema debe permitir generar informes en PDF o Excel con métricas actualizadas (usuarios activos, ventas, incidencias) y ofrecer la descarga inmediata.
+
+| Tipo de prueba | Entrada / acción | Resultado esperado |
+|----------------|------------------|--------------------|
+| Funcional | Usuario elige formato PDF y hace clic en “Generar” | Informe generado y descarga disponible |
+| Funcional / Negativa | Error en datos o métricas faltantes | Mensaje: “No se puede generar el informe por datos incompletos” |
+<BR>
+
+Caso de uso 9: Enviar notificaciones automáticas de eventos<BR>
+
+Requisito funcional:
+El sistema debe enviar notificaciones por correo o dentro de la aplicación cuando ocurran eventos relevantes (nuevo comentario, tarea asignada, renovación próxima).
+
+| Tipo de prueba | Entrada / acción | Resultado esperado |
+|----------------|------------------|--------------------|
+| Funcional | Nuevo comentario en proyecto | Se envía notificación al usuario asignado |
+| Funcional / Negativa | Usuario con notificaciones desactivadas | No se envía aviso |
+<BR>
+
+
+Caso de uso 10: Gestionar roles y permisos de usuario (rol administrador)
+
+Requisito funcional:
+El sistema debe permitir al administrador asignar, modificar o revocar roles y permisos, registrando todas las acciones en el log de auditoría.
+
+| Tipo de prueba | Entrada / acción | Resultado esperado |
+|----------------|------------------|--------------------|
+| Funcional | Admin cambia rol de usuario a “editor” | Cambio guardado y registrado en el log |
+| Funcional / Negativa | Usuario sin permisos intenta cambiar roles | Error: “Acceso denegado” |
+<BR>
+
+Caso de uso 11: Validar métricas financieras (caso tipo SaaS empresarial)<BR>
+
+Requisito funcional:
+El sistema debe comparar los ingresos mensuales actuales con los históricos (MRR, ARR) y marcar automáticamente anomalías o diferencias significativas.
+
+| Tipo de prueba | Entrada / acción | Resultado esperado |
+|----------------|------------------|--------------------|
+| Funcional | Sistema compara MRR actual vs histórico | Detecta diferencias y las marca como anomalías |
+| Funcional / Negativa | Datos financieros incompletos | Mensaje: “Datos insuficientes para análisis” |
+<BR>
+
+Caso de uso 12: Eliminar cuenta y todos los datos personales<BR>
+
+Requisito funcional:
+El sistema debe permitir al usuario eliminar su cuenta de forma permanente, asegurando la eliminación completa de los datos conforme al RGPD.
+
+| Tipo de prueba | Entrada / acción | Resultado esperado |
+|----------------|------------------|--------------------|
+| Funcional | Usuario confirma eliminación | Cuenta y datos borrados según RGPD |
+| Funcional / Negativa | Usuario intenta volver a acceder | Acceso denegado, cuenta no existe |
+<BR>
+
 
 ### 5.1. Pruebas de aceptación
 Nada por aquí 
